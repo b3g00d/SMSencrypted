@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SMSEncrypfinal</string>
+    <string name="title_activity_danh_ba">DanhBa</string>
+    <string name="title_activity_first">First</string>
+    <string name="title_activity_inner">InnerApp</string>
+    <string name="title_activity_listcontact">listcontactkey</string>
+    <string name="title_activity_keylayout">Keylayout</string>
+</resources>

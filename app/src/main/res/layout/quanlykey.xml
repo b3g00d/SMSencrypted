@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.87">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/PublicKey"
+            android:layout_gravity="left|bottom" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Khóa công khai của bạn là:"
+            android:id="@+id/hienthiPublic"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_weight="0.08">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi khóa công khai cho đối tác"
+            android:id="@+id/sendPublickey"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo mới khóa bí mật"
+            android:id="@+id/privateKey"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách khóa bí công khai với đối tác"
+            android:id="@+id/listPublic"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+</LinearLayout>

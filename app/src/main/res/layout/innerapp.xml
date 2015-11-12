@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.00">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ten"
+                android:id="@+id/nameContact"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Sdt"
+                android:id="@+id/sdtContatc"
+                android:layout_gravity="left|bottom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danh bạ"
+                android:id="@+id/danhba"
+                android:layout_gravity="right|top" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.22">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="316dp"
+                android:id="@+id/listViewSMS"
+                android:layout_gravity="left|top"
+                android:divider="@null"
+                android:dividerHeight="5dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52">
+
+            <Switch
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:text="Ma hoa"
+                android:id="@+id/mahoahaykhong"
+                android:layout_gravity="right|center_vertical"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/hienthi"
+                android:layout_gravity="left|center_vertical" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gửi tin nhắn"
+                android:id="@+id/send"
+                android:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendText"
+                android:layout_gravity="left|center_vertical" />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
